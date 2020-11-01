@@ -1,0 +1,112 @@
+<!--
+    ~ Copyright © 2020  Futurewei Technologies, Inc. All rights reserved.
+    ~
+    ~
+    ~
+    ~ Licensed under the Apache License, Version 2.0 (the "License");
+    ~
+    ~ you may not use this file except in compliance with the License.
+    ~
+    ~You may obtain a copy of the License at
+    ~
+    ~
+    ~
+    ~ http://www.apache.org/licenses/LICENSE-2.0
+    ~
+    ~
+    ~
+    ~ Unless required by applicable law or agreed to in writing, software
+    ~
+    ~ distributed under the License is distributed on an "AS IS" BASIS,
+    ~
+    ~ WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+    ~
+    ~ See the License for the specific language governing permissions and
+    ~
+    ~ limitations under the License.
+    -->
+<resources>
+    <string name="app_name">contact_shield_demo</string>
+    <string name="title_activity_main2">MainActivity</string>
+    <string name="title_home">Home</string>
+    <string name="title_dashboard">Dashboard</string>
+    <string name="title_notifications">Notifications</string>
+
+    <string name="title_FAQ">FAQ</string>
+    <string name="title_settings">Settings</string>
+
+    <string name="notPositiveStatus">"I have <b>not</b> tested positive."</string>
+    <string name="positiveStatus">"I tested positive for Covid-19."</string>
+    <string name="media_home">"mountains picture"</string>
+    <string name="info1">"Wash your hands frequently with soap and water or with alcohol hand sanitizer."</string>
+    <string name="info2">"Comply with the current regulations in your area."</string>
+    <string name="info3">"Wear a mask in indoor public places. This includes public transport and all situations where it is not possible to ensure that a safe distance is maintained at all times."</string>
+    <string name="info4">"Respect physical distancing measures if you have to leave the house."</string>
+    <string name="info5">"Staying connect with your friends during this difficult time is important, but please do so without physical contact."</string>
+    <string name="FAQ1">"What are Contact Shield APIs?"</string>
+    <string name="answer1">"Contact Shield is a basic BLE-based contact tracing service provided by HMS Core."</string>
+    <string name="FAQ2">"What are the permissions that needs to be allowed for the app to work?"</string>
+    <string name="answer2">"Storage permission for this app is required. Also, for HMS Core, Storage and Location permissions need to be allowed. This Location permission will be used for Bluetooth only not GPS."</string>
+    <string name="FAQ3">"What version of HMS Core is needed for Contact Shield to work?"</string>
+    <string name="answer3">"HMS Core 5.0.1.307 or later"</string>
+    <string name="FAQ4">"How is privacy guaranteed with HMS Core Contact Shield?"</string>
+    <string name="answer4">"The following measures are taken to protect user privacy:
+
+        &#8226; Users can determine whether to enable Contact Shield, whether to upload anonymous identifiers to the cloud and whether to obtain diagnosis results by themselves (all these functions can be disabled in the settings page)
+
+        &#8226; The Contact Shield SDK does not collect any personal data. It only used dynamically generated anonymous IDs to identify users and does not use any privacy information such as user locations and phone numbers. In addition, anonymous IDs on the cloud can be stored only for a limited period (14 days).
+
+        &#8226; After the user uninstalls an app using Contact Shield APIs, the user’s historical data stored in the device will be deleted. A user can also manually delete all historical data using the “clear data” button in the settings page.
+
+        &#8226; Decentralized data storage on user devices guarantees data privacy. All the data you see on the dashboard of your home page (number of hits and your risk level) is only showed and stored on your device.
+
+        &#8226; Bluetooth is used to send constantly changing random IDs from other devices that installed the app. No personal or location data is sent or stored. "
+    </string>
+    <string name="FAQ5">"How can I allow the app to run in the background?"</string>
+    <string name="answer5">"By default, our app does not run in the background. You can allow the application to run in background by adjusting “Power Usage Details” in the settings for this app. You can click on “App launch” and select “Run in background”, the app will keep running in the background."</string>
+    <string name="FAQ6">"Will the device battery drain more quickly with the app running in the background?"</string>
+    <string name="answer6">"Our app uses the latest energy-efficient BLE (Bluetooth Low Energy) technology, which will not drain your battery while running in the background."</string>
+    <string name="FAQ7">"How can I submit a positive test report?"</string>
+    <string name="answer7">"You can report a positive test by clicking the “report a positive test” button once you select “I tested positive for Covid-19” in the home page. You can verify your positive test report by either scanning a QR code or Requesting a TeleTAN."</string>
+    <string name="FAQ8">"What does the statistics on the dashboard mean and how can I update it?"</string>
+    <string name="answer8">"    &#8226; Number of hits: The displayed number of hits is the total number of hits since installation or the latest clear data.
+
+        &#8226; Risk Level: Each hit comes with a risk level, here we display the maximum risk level since installation or the latest clear data. 
+
+        &#8226; Refresh: Patients will upload their anonymous IDs to the server daily.  Once you click the Refresh button in the home page, you download the newly added IDs and check with the Bluetooth signals it has collected. If the app finds a match, the number of hits and risk level will be updated.
+
+        &#8226; Clear data: Once you click the clear data button in the settings page, you removed all the data related to contact shield before and restart the contact shield engine."</string>
+    <string name="FAQ9">"When will I get alerted?"</string>
+    <string name="answer9">"The device will generate an alert if when the risk level of a user is greater than or equal to medium."</string>
+    <string name="report_results"> <u> "Report your results >>" </u></string>
+    <string name="report_positive_heading"> <b>"Share Your Positive Test Result"</b></string>
+    <string name="report_positive_body">"If you have been tested positive for COVID-19, you can share your test results to help notify others who may have been in contact with you. This will let others know they should monitor for symptoms. Only those who have been exposed will receive a notification."</string>
+    <string name="verify_heading"> <b>"Enter Your TeleTAN"</b></string>
+    <string name="verify_caption">"This unique verification code is provided by your testing center, and it is used to verify your positive test result."</string>
+    <string name="test_date_heading"><b>"Test Date"</b></string>
+    <string name="test_date_caption">"Your test date helps the app know when you may have been contagious and notify others who have been in contact with you from the past 14 days."</string>
+    <string name="disable_app_caption">"When the App is disabled, your device will not send or receive signals from other users."</string>
+    <string name="disable_PK_caption">"When Periodic Key upload is disabled, the device will stop uploading your periodic keys to the server, and others will not be able to download your periodic key if you are tested positive. New periodic keys will be generated and stored locally on the device."</string>
+    <string name="disable_notification_caption">"When notifications are turned off, your device will not receive any notifications for potential exposures or interactions with other users."</string>
+    <string name="alert_heading"><b>"You have been in contact with a Covid-19 Patient!"</b></string>
+    <string name="alert_body">"Someone you have been in contact with recently have self-reported positive. Please self-quarantine or get tested at your local testing center."</string>
+    <string name="notification_heading">"You have received an announcement"</string>
+    <string name="notification_body">"There has been an announcement for you: There is a curfew from 9 p.m. tonight until 5 a.m. tomorrow morning. Please stay indoors tonight."</string>
+    <string name="verification_methods_heading">"Choose Verification Method"</string>
+    <string name="verification_method1_heading">"Scan QR code"</string>
+    <string name="verification_method1_description">"Register your test by scanning the QR code that can be found in your testing documents."</string>
+    <string name="verification_method2_heading">"Request TeleTAN"</string>
+    <string name="verification_method2_description">"Please call us if you have been diagnosed of COVID-19 but do not have a QR code."</string>
+    <string name="teleTAN_heading">"How this works"</string>
+    <string name="teleTAN_description">"Call the hotline to request a TeleTAN:"</string>
+    <string name="teleTAN_hotline">"+1(332)-207-8569"</string>
+    <string name="submission_success_heading">"Your report is successfully submitted"</string>
+    <string name="submission_success_body">"Thank you for submitting your report. We will now notify others who have been in contact with you. Make sure to stay safe and self isolate."</string>
+    <string name="submission_unsuccess_heading">"There is an error in your submission"</string>
+    <string name="submission_unsuccess_body">"Please recheck your QR code or teleTAN. Make sure it is not expired and that you have entered your information correctly."</string>
+    <string name="internet_error_heading">"No Internet Connection"</string>
+    <string name="internet_error_body">"Please check your internet settings and make sure your phone is connect in order to proceed your submission."</string>
+    <string name="title_activity_main">MainActivity</string>
+
+
+</resources>

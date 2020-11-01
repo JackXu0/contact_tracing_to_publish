@@ -1,0 +1,27 @@
+
+.column {
+  display: inline-block;
+  width: 48%;
+}
+
+img{
+    display: block;
+    margin: auto;
+}
+
+h1 {
+    display: block;
+    height: 80px;
+    line-height: 140px;
+    text-align: center
+}
+
+hr {
+    display: block;
+    height: 1px;
+    border: 0;
+    border-top: 1px solid #000000;
+    margin-left: 300px;
+    margin-right: 300px;
+    padding: 0;
+}
