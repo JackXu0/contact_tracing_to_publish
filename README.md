@@ -1,3 +1,3 @@
 # contact_tracing_to_publish
 
-3ff442c54c57694fcf82207683de37df97df1ff5
+c7d473b1d92febc64f2f9c2f0be86f67a6504e4f
